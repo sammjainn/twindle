@@ -1,0 +1,48 @@
+{
+  "name": "twindle",
+  "version": "0.0.1",
+  "description": "This cli fetches a twitter thread and converts it into PDF, ePub, Mobi, etc",
+  "main": "src/index.js",
+  "scripts": {
+    "start:mock": "node src/index.js -m",
+    "start:thread": "node src/index.js -i 1323618091511607296",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "npm run test -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twindle-co/twindle-cli.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/twindle-co/twindle-cli/issues"
+  },
+  "homepage": "https://github.com/twindle-co/twindle-cli#readme",
+  "dependencies": {
+    "@mozilla/readability": "^0.4.1",
+    "date-fns": "^2.16.1",
+    "dotenv": "^8.2.0",
+    "epub-gen": "^0.1.0",
+    "handlebars": "^4.7.6",
+    "kleur": "^4.1.4",
+    "node-calibre": "^2.1.1",
+    "node-fetch": "^2.6.1",
+    "nodemailer": "^6.4.17",
+    "ora": "^5.3.0",
+    "prompt": "^1.1.0",
+    "puppeteer": "^5.5.0",
+    "showdown": "^1.9.1",
+    "svelte": "^3.31.2",
+    "twemoji": "13.0.1",
+    "yargs": "^16.2.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.20",
+    "@types/node-fetch": "^2.5.8",
+    "hacker-news-api-types": "^1.0.1",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1"
+  }
+}
